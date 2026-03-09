@@ -11,10 +11,13 @@ pip install -r requirements.txt
 
 # 2. Start CARLA server
 ./CarlaUE4.sh -quality-level=Low          # Linux
-CarlaUE4.exe -quality-level=Low           # Windows
+#for us
+sudo docker run -p 2000-2002:2000-2002 --gpus "device=0" carlasim/carla:0.9.15 /bin/bash ./CarlaUE4.sh -RenderOffScreen -quality-level=Epic
+
+
 
 # 3. Run the scenario (synchronous mode recommended)
-python main.py --config configs/scenario.yaml --sync
+ python main.py --config configs/scenario.yaml --sync --host 172.27.21.11 --port 2000
 ```
 
 ## Configuration (`configs/scenario.yaml`)
