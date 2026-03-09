@@ -1,0 +1,8 @@
+# Python dependencies for CARLA Collision Scenario Engine
+# CARLA Python API must be installed separately from the CARLA distribution:
+#   pip install carla==0.9.15   (match your CARLA server version)
+
+carla>=0.9.13
+pygame>=2.1.0
+numpy>=1.21.0
+PyYAML>=6.0

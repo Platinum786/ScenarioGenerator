@@ -1,0 +1,6 @@
+scenario:
+  town: Town05
+  junction_type: 4_way   # "3_way" or "4_way"
+  npc_count: 1
+  event_time: 8           # seconds until collision
+  collision_type: t_bone  # t_bone | head_on | rear_end
